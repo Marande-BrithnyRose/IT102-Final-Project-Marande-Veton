@@ -40,8 +40,8 @@ int main()
                     }
                     printf("\n");
                 }
-                //3.Isosceles Triangle, 4. Inverted Right Triangle, 5. Christmas Tree)
-            } else if (operation == 3) {
+
+                } else if (operation == 3) {
 
                 printf("Enter the number of rows: ");
                 scanf("%d", &rows);
