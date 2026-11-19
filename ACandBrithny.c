@@ -83,11 +83,20 @@ int main()
                         }
                         printf("\n");
                     }
+                    for (i = 1; i <= rows; i++) {
+                        for (j = 1; j <= rows - i; j++) {
+                            printf(" ");
+                        }
+                        for (j = 1; j <= 2 * i; j++) {
+                            printf("*");
+                        }
+                        printf("\n");
+                    }
                     for (i = 1; i <= 3; i++) {
                         for (j = 1; j < rows; j++) {
                              printf(" ");
                         }
-                            printf("*\n");
+                            printf("**\n");
                     }   
     
                 } else {
@@ -202,11 +211,11 @@ int main()
             }
             if(all == 0)
             {
-                printf("The word is a palindrome.\n");
+                printf("The %s is a palindrome.\n", str);
             }
             else
             {
-                printf("The word is not a palindrome.\n");
+                printf("The %s is not a palindrome.\n", str);
             }
         }
         else if(choice == 5)
